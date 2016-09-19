@@ -57,6 +57,7 @@ module.exports = yeoman.Base.extend({
       'index.js',
       'messages.js',
       'index.test.js'
+      'style.css'
     ];
 
     files.forEach(function(file){
