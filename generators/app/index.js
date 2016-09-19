@@ -19,10 +19,10 @@ module.exports = yeoman.Base.extend({
       'Welcome to the pioneering ' + chalk.red('generator-react-c') + ' generator!'
     ));
 
-
+/*
 
     var prompts = [
-    /*{
+    {
       type: 'input',
       name: 'componentName',
       message: 'Component name (camelCase)',
@@ -30,7 +30,7 @@ module.exports = yeoman.Base.extend({
         return this.componentName != false;
       },
       default: this.componentName
-    },*/
+    },
     {
       type: 'input',
       name: 'componentDir',
@@ -45,6 +45,7 @@ module.exports = yeoman.Base.extend({
       this.componentDir = props.componentDir;
       this.props = props;
     }.bind(this));
+    */
   },
 
   writing: function () {
@@ -56,14 +57,14 @@ module.exports = yeoman.Base.extend({
     var files = [
       'index.js',
       'messages.js',
-      'index.test.js'
+      'index.test.js',
       'style.css'
     ];
 
     files.forEach(function(file){
       this.fs.copyTpl(
       this.templatePath(file),
-      this.destinationPath( this.componentDir + '/' + this.componentName + '/' + file),
+      this.destinationPath(this.componentName + '/' + file),
       options
       );  
     }.bind(this));
@@ -71,7 +72,7 @@ module.exports = yeoman.Base.extend({
   },
 
   install: function () {
-    this.installDependencies();
+    //this.installDependencies();
   },
 
   end: function(){
