@@ -3,7 +3,7 @@ import {expect} from 'chai';
 import <%= componentName %> from './index';
 import messages from './messages';
 
-describe('<%= componentName>', ()=>{
+describe('<%= componentName %>', ()=>{
 	describe("Tests", ()=>{
 		it("has defined test", ()=>{
 			expect(false).to.be.true;
