@@ -9,7 +9,7 @@ module.exports = yeoman.Base.extend({
     constructor: function(){
       yeoman.Base.apply(this, arguments);
       this.argument('componentName', {type: String, required: true});
-      this.componentName = _.camelCase(this.componentName);
+      this.componentName = _.upperFirst(_.camelCase(this.componentName));
     },
 
 
