@@ -2,6 +2,7 @@ import React from 'react';
 import {expect} from 'chai';
 import <%= componentName %> from './index';
 import messages from './messages';
+import { shallow, contains } from 'enzyme';
 
 describe('<%= componentName %>', ()=>{
 	describe("Tests", ()=>{
