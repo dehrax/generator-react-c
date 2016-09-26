@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 import style from './style.css';
 
