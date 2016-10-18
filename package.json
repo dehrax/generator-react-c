@@ -1,6 +1,6 @@
 {
   "name": "generator-react-c",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A Yeoman generator for isolated project specific React components.",
   "homepage": "",
   "author": {
@@ -18,8 +18,9 @@
     "react component"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.23.0",
     "chalk": "^1.0.0",
+    "lodash": "^4.16.4",
+    "yeoman-generator": "^0.23.0",
     "yosay": "^1.0.0"
   },
   "devDependencies": {
